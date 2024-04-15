@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Dark mode */
+body:not(.current-projects) {
+  background-color: #121212;
+  color: white;
+  margin: auto;
+}
+
+/* Div styles */
+.current-projects {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 10px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+  padding: 20px 20px 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Button styles */
+a {
+  padding: 10px 20px 10px 20px;
+  text-decoration: underline;
+  margin: 10px;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+a:hover {
+  background-color: rgb(50, 50, 50);
+}
+a:active {
+  background-color: rgb(66, 66, 66);
+}
+
+/* Font sizes and text-align */
+h1 {
+  font-size: 4vh;
+  text-align: center;
+}
+h2 {
+  font-size: 3vh;
+  text-align: center;
+}
+a, p {  
+  font-size: 2vh;
+  text-align: center;
+  color: white;
+}
+.notice {
+  font-style: italic;
+}
