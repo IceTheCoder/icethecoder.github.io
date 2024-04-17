@@ -62,3 +62,10 @@ a, p {
 .notice {
   font-style: italic;
 }
+
+/* Image styles */
+img {
+  width: 576px;
+  height: auto;
+  max-width: 90vw;
+}
