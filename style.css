@@ -82,19 +82,19 @@ img {
 
 /* RESPONSIVE DESIGN */
 /* Font sizes */
-@media screen and (min-width: 1750px) and (min-height: 850px) {
+@media screen and (min-width: 1750px) and (min-height: 900px) {
   :root {
     --base-font-size: 28px;
   }
 }
 
-@media screen and (max-width: 1750px) and (min-height: 850px) {
+@media screen and (max-width: 1750px) and (min-height: 900px) {
   :root {
     --base-font-size: 24px;
   }
 }
 
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 900px) {
   :root {
     --base-font-size: 20px;
   }
