@@ -29,6 +29,11 @@ body:not(.current-projects) {
   margin: 10px;
   border-radius: 5px;
 }
+@media screen and (max-width: 500px) {
+  .project {
+    padding: 0;
+  }
+}
 
 /* Button styles */
 a {
@@ -54,18 +59,6 @@ h1, h2, a, p {
 /* Use a base font size, defined as the font sizes of the <a> and <p> elements, so that other 
 elements' font sizes automatically get updated, staying the same size relative to the <a> and 
 <p> elements */
-@media screen and (min-width: 1500px) {
-  :root {
-    --base-font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  :root {
-    --base-font-size: 24px;
-  }
-}
-
 a, p {
   font-size: var(--base-font-size);
 }
@@ -82,13 +75,27 @@ h2 {
 
 /* Image styles */
 img {
-  width: 576px;
+  width: 550px;
   height: auto;
-  max-width: 90vw;
+  max-width: 85vw;
 }
 
-@media screen and (max-width: 1500px) {
-  img {
-    width: 480px;
+/* RESPONSIVE DESIGN */
+/* Font sizes */
+@media screen and (min-width: 1750px) and (min-height: 850px) {
+  :root {
+    --base-font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1750px) and (min-height: 850px) {
+  :root {
+    --base-font-size: 24px;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  :root {
+    --base-font-size: 20px;
   }
 }
