@@ -29,6 +29,11 @@ body:not(.current-projects) {
   margin: 10px;
   border-radius: 5px;
 }
+@media screen and (max-width: 500px) {
+  .project {
+    padding: 0;
+  }
+}
 
 /* Button styles */
 a {
@@ -45,27 +50,52 @@ a:active {
   background-color: rgb(66, 66, 66);
 }
 
-/* Font sizes and text-align */
-h1 {
-  font-size: 4vh;
-  text-align: center;
-}
-h2 {
-  font-size: 3vh;
-  text-align: center;
-}
-a, p {  
-  font-size: 2vh;
+h1, h2, a, p {
   text-align: center;
   color: white;
 }
+
+/* Font sizes */
+/* Use a base font size, defined as the font sizes of the <a> and <p> elements, so that other 
+elements' font sizes automatically get updated, staying the same size relative to the <a> and 
+<p> elements */
+a, p {
+  font-size: var(--base-font-size);
+}
+h1 {
+  font-size: calc(2.1 * var(--base-font-size));
+}
+h2 {
+  font-size: calc(1.7 * var(--base-font-size));
+}
+
 .notice {
   font-style: italic;
 }
 
 /* Image styles */
 img {
-  width: 576px;
+  width: 550px;
   height: auto;
-  max-width: 90vw;
+  max-width: 85vw;
+}
+
+/* RESPONSIVE DESIGN */
+/* Font sizes */
+@media screen and (min-width: 1750px) and (min-height: 900px) {
+  :root {
+    --base-font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1750px) and (min-height: 900px) {
+  :root {
+    --base-font-size: 24px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  :root {
+    --base-font-size: 20px;
+  }
 }
