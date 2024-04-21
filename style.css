@@ -91,7 +91,6 @@ img {
   border-radius: 5px;
 }
 
-/* RESPONSIVE DESIGN */
 /* Font sizes */
 @media screen and (min-width: 1750px) and (min-height: 900px) {
   :root {
