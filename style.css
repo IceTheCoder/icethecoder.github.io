@@ -55,6 +55,13 @@ h1, h2, a, p {
   color: white;
 }
 
+/* Image styles */
+img {
+  width: 550px;
+  height: auto;
+  max-width: 85vw;
+}
+
 /* Font sizes */
 /* Use a base font size, defined as the font sizes of the <a> and <p> elements, so that other 
 elements' font sizes automatically get updated, staying the same size relative to the <a> and 
@@ -73,15 +80,7 @@ h2 {
   font-style: italic;
 }
 
-/* Image styles */
-img {
-  width: 550px;
-  height: auto;
-  max-width: 85vw;
-}
-
-/* RESPONSIVE DESIGN */
-/* Font sizes */
+/* Responsive design */
 @media screen and (min-width: 1750px) and (min-height: 900px) {
   :root {
     --base-font-size: 28px;
