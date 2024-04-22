@@ -1,5 +1,5 @@
 * {
-  margin: 10px;
+  margin: 5px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -18,7 +18,8 @@ body:not(.current-projects) {
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  margin: 10px;
+  margin: 0;
+  width: 100%;
 }
 .project {
   display: flex;
@@ -28,6 +29,14 @@ body:not(.current-projects) {
   padding: 20px 20px 10px 20px;
   margin: 10px;
   border-radius: 5px;
+  width: 600px;
+  max-width: 90vw;
+}
+@media screen and (min-width: 1920px) {
+  /* This should make sure only 3 projects are shown on each row on larger screens (I have no way to tests screens above 1440p) */
+  .project {
+    flex-basis: calc(100% / 4);
+  }
 }
 @media screen and (max-width: 500px) {
   .project {
@@ -80,7 +89,16 @@ h2 {
   font-style: italic;
 }
 
-/* Responsive design */
+/* Image styles */
+img {
+  width: 550px;
+  height: auto;
+  max-width: 95%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Font sizes */
 @media screen and (min-width: 1750px) and (min-height: 900px) {
   :root {
     --base-font-size: 28px;
