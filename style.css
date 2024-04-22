@@ -38,10 +38,10 @@ body:not(.current-projects) {
 /* Button styles */
 a {
   padding: 10px 20px 10px 20px;
-  text-decoration: underline;
   margin: 10px;
   border-radius: 10px;
   transition-duration: 0.2s;
+  text-decoration: underline;
 }
 a:hover {
   background-color: rgb(50, 50, 50);
@@ -58,8 +58,8 @@ h1, h2, a, p {
 /* Image styles */
 img {
   width: 550px;
-  height: auto;
   max-width: 85vw;
+  height: auto;
 }
 
 /* Font sizes */
