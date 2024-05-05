@@ -12,7 +12,7 @@ body:not(.current-projects) {
 }
 
 /* Div styles */
-.current-projects {
+.current-projects, .discontinued-projects .websites {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
@@ -32,9 +32,9 @@ body:not(.current-projects) {
   max-width: 90vw;
 }
 @media screen and (min-width: 1920px) {
-  /* This should make sure only 3 projects are shown on each row on larger screens (I have no way to tests screens above 1440p) */
+  /* This should make sure only 2 projects are shown on each row on larger screens (I have no way to tests screens above 1440p) */
   .project {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 3);
   }
 }
 @media screen and (max-width: 500px) {
@@ -58,7 +58,7 @@ a:active {
   background-color: rgb(66, 66, 66);
 }
 
-h1, h2, a, p {
+h1, h2, h3, a, p {
   text-align: center;
   color: white;
 }
@@ -82,6 +82,9 @@ h1 {
 }
 h2 {
   font-size: calc(1.7 * var(--base-font-size));
+}
+h3 {
+  font-size: calc(1.4 * var(--base-font-size));
 }
 
 .notice {
