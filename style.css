@@ -31,7 +31,7 @@ body:not(.current-projects) {
   width: 600px;
   max-width: 90vw;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1888px) {
   /* This should make sure only 2 projects are shown on each row on larger screens (I have no way to tests screens above 1440p) */
   .project {
     flex-basis: calc(100% / 3);
