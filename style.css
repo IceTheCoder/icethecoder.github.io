@@ -12,7 +12,7 @@ body:not(.current-projects) {
 }
 
 /* Div styles */
-.current-projects, .discontinued-projects .websites {
+.current-projects, .discontinued-projects {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
@@ -80,6 +80,10 @@ h2 {
 }
 h3 {
   font-size: calc(1.4 * var(--base-font-size));
+}
+figcaption {
+  font-size: calc(0.7 * var(--base-font-size));
+  text-align: center;
 }
 
 .notice {
