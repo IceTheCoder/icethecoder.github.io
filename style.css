@@ -97,13 +97,11 @@ img {
   max-width: 95%;
   margin-top: 15px;
   border-radius: 5px;
-  border: 1px solid red;
 }
 picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid orange;
 }
 source {
   display: none;
