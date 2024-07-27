@@ -98,6 +98,18 @@ img {
   margin-top: 15px;
   border-radius: 5px;
 }
+@media screen and (max-width: 750px) {
+  img {
+    width: 360px;
+    height: 800px;
+  }
+}
+@media screen and (min-width: 750px) and (max-wdith: 1280px) {
+  img {
+    width: 768px;
+    height: 1024px;
+  }
+}
 
 /* Font sizes */
 @media screen and (min-width: 1750px) and (min-height: 900px) {
