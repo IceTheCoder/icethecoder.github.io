@@ -92,23 +92,21 @@ p {
 
 /* Image styles */
 img {
-  width: 550px;
-  height: auto;
+  width: 100%;
+  height: 100%;
   max-width: 95%;
   margin-top: 15px;
   border-radius: 5px;
+  border: 1px solid red;
 }
-@media screen and (max-width: 750px) {
-  img {
-    width: 360px;
-    height: 800px;
-  }
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid orange;
 }
-@media screen and (min-width: 750px) and (max-wdith: 1280px) {
-  img {
-    width: 768px;
-    height: 1024px;
-  }
+source {
+  display: none;
 }
 
 /* Font sizes */
