@@ -10,12 +10,14 @@
   <title>IceTheCoder</title>
   <link rel="preload" href="style.css" as="style"> <!-- This should inform the browser to download the stylesheet ASAP to avoid layout shifts -->
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
   <link rel="icon" href="./icon.png">
   <style>
-    * {
-      font-family: "Roboto", sans-serif;
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap) format('woff2');
     }
   </style>
 </head>
@@ -38,7 +40,7 @@
       <p class="notice">From most recent to oldest</p>
       <div class="current-projects">
         <div class="project" id="tribute-page">
-          <picture alt="Tribute Page">
+          <picture alt="Tribute Page" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/tribute-page/tribute-page-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/tribute-page/tribute-page-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/tribute-page/tribute-page-landscape.webp">
@@ -47,7 +49,7 @@
           <a href="https://icethecoder.github.io/projects/tribute-page-new/index.html">Tribute Page</a>
         </div>
         <div class="project" id="landing-page">
-          <picture alt="Landing Page">
+          <picture alt="Landing Page" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/landing-page/landing-page-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/landing-page/landing-page-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/landing-page/landing-page-landscape.webp">
@@ -56,7 +58,7 @@
           <a href="https://icethecoder.github.io/projects/landing-page/index.html">Landing Page</a>
         </div>
         <div class="project" id="restaurant-website">
-          <picture alt="Restaurant Website">
+          <picture alt="Restaurant Website" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/restaurant-website/restaurant-website-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/restaurant-website/restaurant-website-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/restaurant-website/restaurant-website-landscape.webp">
@@ -65,7 +67,7 @@
           <a href="https://icethecoder.github.io/projects/restaurant-website/index.html">Restaurant Website</a>
         </div>
         <div class="project" id="event-page">
-          <picture alt="Event Page">
+          <picture alt="Event Page" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/event-page/event-page-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/event-page/event-page-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/event-page/event-page-landscape.webp">
@@ -74,7 +76,7 @@
           <a href="https://icethecoder.github.io/projects/event-page/index.html">Event Page</a>
         </div>
         <div class="project" id="photography-website">
-          <picture alt="Photography Website">
+          <picture alt="Photography Website" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/photography-website/photography-website-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/photography-website/photography-website-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/photography-website/photography-website-landscape.webp">
@@ -83,11 +85,12 @@
           <a href="https://icethecoder.github.io/projects/photography-website/index.html">Photography Website</a>
         </div>
         <div class="project" id="snake">
-          <picture alt="Snake game">
+          <picture alt="Snake game" style="width:550;height:313;">
             <source media="(max-width: 750px)" srcset="images/snake/snake-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/snake/snake-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/snake/snake-landscape.webp">
-            <img loading="lazy" src="images/snake/snake.webp" width="550" height="313">
+            <!-- Remove lazy loading b/c we want this image to load ASAP -->
+            <img src="images/snake/snake.webp" width="550" height="313">
           </picture>
           <a href="https://icethecoder.github.io/snake">Snake</a>
         </div>
