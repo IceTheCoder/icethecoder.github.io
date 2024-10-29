@@ -27,9 +27,16 @@
       </p>
     </div>
     <div class="projects">
-      <h2>Current Projects</h2>
-      <p class="notice">From most recent to oldest</p>
+      <h2>Websites</h2>
       <div class="section">
+        <div class="project" id="form">
+          <img loading="lazy" src="images/form.webp" alt="Form" width="550" height="313">
+          <a href="https://icethecoder.github.io/projects/discontinued/form/index.html">Form</a>
+        </div>
+        <div class="project" id="parallax">
+          <img loading="lazy" src="images/parallax.webp" alt="Parallax" width="550" height="313">
+          <a href="https://icethecoder.github.io/projects/discontinued/parallax/index.html">Parallax</a>
+        </div>
         <div class="project" id="tribute-page">
           <picture alt="Tribute Page">
             <source media="(max-width: 750px)" srcset="images/tribute-page/tribute-page-mobile.webp">
@@ -71,40 +78,36 @@
             <source media="(max-width: 750px)" srcset="images/photography-website/photography-website-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/photography-website/photography-website-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/photography-website/photography-website-landscape.webp">
-            <img loading="lazy" src="images/photography-website/photography-website.webp" width="550" height="313" alt="Fictional Photography Website">
+            <!-- Remove lazy loading b/c we want to load this image ASAP -->
+            <img src="images/photography-website/photography-website.webp" width="550" height="313" alt="Fictional Photography Website">
           </picture>
           <a href="https://icethecoder.github.io/projects/photography-website/index.html">Photography Website</a>
+        </div>
+      </div>
+      <h2>Programs</h2>
+      <div class="section">
+        <div class="project" id="passwordsy">
+          <img loading="lazy" src="images/passwordsy.webp" alt="Passwordsy">
+          <a href="https://github.com/IceTheCoder/Passwordsy">Passwordsy</a>
+          <p>Password generator and password strength checker</p>
+        </div>
+      </div>
+      <h2>Games</h2>
+      <div class="section">
+        <div class="project" id="light-game">
+          <img loading="lazy" src="images/light-game.webp" alt="LIGHT GAME">
+          <a href="https://github.com/IceTheCoder/Passwordsy">LIGHT GAME</a>
+          <p>You control a light that gets larger the faster you move.</p>
         </div>
         <div class="project" id="snake">
           <picture alt="Snake game">
             <source media="(max-width: 750px)" srcset="images/snake/snake-mobile.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: portrait)" srcset="images/snake/snake-portrait.webp">
             <source media="(min-width: 750px) and (max-width: 1260px) and (orientation: landscape)" srcset="images/snake/snake-landscape.webp">
-            <!-- Remove lazy loading b/c we want this image to load ASAP -->
-            <img src="images/snake/snake.webp" width="550" height="313" alt="Snake Game">
+            <img loading="lazy" src="images/snake/snake.webp" width="550" height="313" alt="Snake Game">
           </picture>
           <a href="https://icethecoder.github.io/snake">Snake</a>
-        </div>
-      </div>
-      <h2>Discontinued Projects</h2>
-      <div class="section">
-        <div class="project" id="form">
-          <img loading="lazy" src="images/form.webp" alt="Form" width="550" height="313">
-          <a href="https://icethecoder.github.io/projects/discontinued/form/index.html">Form</a>
-        </div>
-        <div class="project" id="parallax">
-          <img loading="lazy" src="images/parallax.webp" alt="Parallax" width="550" height="313">
-          <a href="https://icethecoder.github.io/projects/discontinued/parallax/index.html">Parallax</a>
-        </div>
-        <div class="project" id="passwordsy">
-          <img loading="lazy" src="images/passwordsy.webp" alt="Passwordsy">
-          <a href="https://github.com/IceTheCoder/Passwordsy">Passwordsy</a>
-          <p>Password generator and password strength checker</p>
-        </div>
-        <div class="project" id="light-game">
-          <img loading="lazy" src="images/light-game.webp" alt="LIGHT GAME">
-          <a href="https://github.com/IceTheCoder/Passwordsy">LIGHT GAME</a>
-          <p>You control a light that gets larger the faster you move.</p>
+          <p>A very basic snake game, made in JavaScript with the Phaser game engine</p>
         </div>
       </div>
     </div>
