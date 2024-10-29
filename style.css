@@ -13,7 +13,7 @@ body:not(.current-projects) {
 }
 
 /* Div styles */
-.current-projects, .discontinued-projects {
+.section {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
@@ -33,7 +33,7 @@ body:not(.current-projects) {
   max-width: 90vw;
 }
 @media screen and (min-width: 1888px) {
-  /* This should make sure only 2 projects are shown on each row on larger screens (I have no way to tests screens above 1440p) */
+  /* This should make sure only 2 projects are shown on each row on larger screens */
   .project {
     flex-basis: calc(100% / 3);
   }
